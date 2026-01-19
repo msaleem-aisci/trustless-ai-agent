@@ -1,0 +1,18 @@
+{
+  "name": "trustless-agent-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "init:circle": "node scripts/init_circle.js"
+  },
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "^2.0.0",
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  }
+}
