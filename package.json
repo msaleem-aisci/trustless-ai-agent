@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "node src/server.js",
-    "start": "node src/server.js",
+
     "init:circle": "node scripts/init_circle.js"
   },
   "dependencies": {
@@ -17,4 +17,5 @@
     "uuid": "^9.0.1"
   }
 }
+
 
