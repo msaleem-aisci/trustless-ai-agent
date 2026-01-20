@@ -25,7 +25,9 @@ app.get("/health", (_, res) => res.json({ ok: true }));
 /* =========================
    DEBUG / UTILS
 ========================= */
-
+app.get("/test", (req, res) => {
+  return res.json({"simple": "This is just test"})
+}
 // ✅ Agent wallet balances via SDK
 app.get("/balance", async (_req, res) => {
   try {
@@ -160,3 +162,4 @@ app.get("/wallets/balances", async (_req, res) => {
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`API running on http://localhost:${PORT}`));
+
